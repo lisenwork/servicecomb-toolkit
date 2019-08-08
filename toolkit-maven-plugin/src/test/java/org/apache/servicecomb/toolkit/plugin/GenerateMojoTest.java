@@ -75,7 +75,13 @@ public class GenerateMojoTest {
       assertEquals(0, Objects
           .requireNonNull(new File(testResourcesEx.getVariableValueFromObject("contractLocation")).listFiles()).length);
     } catch (MojoFailureException e) {
+<<<<<<< 5f3f329e5d1e73082b1811484a0d17d485c3ff42
       fail("Run 'testGenerateMojo' failed, unexpected to catch MojoFailureException: " + e.getMessage());
+=======
+      e.printStackTrace();
+
+      fail(e.getMessage());
+>>>>>>> test2
     }
 
     // code has contract
